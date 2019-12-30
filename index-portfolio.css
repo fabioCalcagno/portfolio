@@ -299,7 +299,7 @@ font-size: 1em;
 #tcc-description-tag{
     display: flex;
     align-items: center;
-    background-image: url('./imagens/tcc-image.png');
+    background-image: url('./imagens/figuras/tcc-image.png');
     background-repeat: no-repeat;
     background-position: center;
    
