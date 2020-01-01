@@ -2,12 +2,16 @@
 @media (max-width: 550px ){
 
 
-
+    @-ms-viewport{
+        width: device-width;
+      }
 
     body{
-        margin: auto;
+        right: 0;
+        margin: 0 auto;
         overflow-x: hidden;
         width: 100%; 
+        min-width: 280px;
     }
 
   header .container{
@@ -59,8 +63,6 @@
 
 .section-trabalhos{
     background-color: rgba(0, 0, 0, 0.0);
-    min-height: 800px;
-
 }
 
 .container-work{
@@ -107,6 +109,7 @@
     flex: 2;
     flex-flow: column wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -127,7 +130,13 @@
     background-repeat: no-repeat;
 }
 
+#estagio-description{
+    text-align: center;
+}
+
 #tcc-description-tag{
+    min-height: 100px;
+    min-width: 250px;
     flex: 1;
     order: -1;
     background-image: url('./imagens/figuras/tcc-banner-responsive.png');
@@ -139,6 +148,7 @@
     padding: 0!important;
     display: flex;
     justify-content: center;
+    flex-flow: column wrap;
 }
 #tcc-description ul{
     padding: 0;
@@ -165,6 +175,15 @@
   
    min-height: 192px;
    min-width: 238px;
+}
+
+.github-tag{
+    background-image: url('./imagens/figuras/gitgub-tag.png');
+    background-size: cover;
+    width: 100%;
+    height: 10%;
+    background-repeat: no-repeat;
+ 
 }
 
 .conhecimentos{
