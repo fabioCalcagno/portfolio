@@ -12,11 +12,17 @@ for (let i = 0; i < descendentes.length; i++) {
 
 var descendentes = document.querySelectorAll(".cursos-list-itens");
 for (let i = 0; i < descendentes.length; i++) {
-    descendentes[i].addEventListener("mousemove", function (e) {
+    descendentes[i].addEventListener("touchmove", function (e) {
       
         this.removeAttribute('class', 'cursos-list-itens-huge');
         this.setAttribute('class', 'cursos-list-itens');
        
+})
+descendentes[i].addEventListener("mousemove", function (e) {
+      
+    this.removeAttribute('class', 'cursos-list-itens-huge');
+    this.setAttribute('class', 'cursos-list-itens');
+   
 })
 }
     

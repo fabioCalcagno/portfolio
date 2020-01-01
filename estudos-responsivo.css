@@ -18,6 +18,7 @@
 .container-estudos .main-menu{
     width: 100%;
     justify-content: space-between;
+    min-height: 400px;
 }
 
 .cursos-list{
@@ -36,7 +37,7 @@
 
 .cursos-list-itens{
     width: 100%;
-    height: 120px;
+    height:200px;
     flex: 0 0 auto;
 }
 
