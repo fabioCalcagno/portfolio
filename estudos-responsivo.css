@@ -17,8 +17,9 @@
 
 .container-estudos .main-menu{
     width: 100%;
-    justify-content: space-between;
-    min-height: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 .cursos-list{
@@ -52,9 +53,13 @@
     
    
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     list-style: none;
     z-index: 11;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+   
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
  
  

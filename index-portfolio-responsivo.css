@@ -160,9 +160,11 @@
     
 }
 
-#tcc-description ul li:nth-of-type(1n+2){
+#tcc-description ul li:nth-of-type(1n+3){
     display: none;
 }
+
+
 
 
 .main-menu-works-video{

@@ -4,7 +4,7 @@
     z-index: 1;
     display: flex;
     width: 100%;
-    height:700px;
+    height:500px;
     font-family: 'Raleway-Black';
     background-color: rgba(255, 255, 0, 0.2);
     flex-flow: row wrap;
@@ -14,7 +14,7 @@
 .container-estudos{
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
    
 }
 
@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
     flex: 1;
-    background-image: url('./imagens/figuras/left-menu-estudos.png');
+    background-image: url('./imagens/figuras/left-menu-estudos-responsivo.png');
     background-position: center;
     background-repeat: no-repeat;
     min-width: 229.500px;
@@ -34,8 +34,22 @@
     width: 100%;
     
     display: flex;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    
 }
+
+#estudos::before{
+    content: url('./imagens/figuras/estudos-seta-scroll-behavior.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-self: center;
+   
+}
+
+
+
+
 
 .cursos-list{
     display: flex;
@@ -52,35 +66,56 @@
 
 .cursos-list-itens{
     list-style: none;
-    width: 19%;
-    height: 19%;
     background-position-x: center;
     padding: 0;
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;    
+}
+
+
+.cursos-list{
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   
-    justify-content: center;
- 
-   
+    -webkit-overflow-scrolling: auto;
+       
+}   
+    
+    /* Track */
+    
+.cursos-list::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.3) ;
+    }
+    
+    
+    /* Handle */
+    
+.cursos-list::-webkit-scrollbar-thumb {
+        background: rgba(237, 81, 7, 0.5);
+        opacity: 0.3;
+    }   
+
+.cursos-list-itens{
+    width: 30%;
+    height:200px;
+    flex: 0 0 auto;
+    opacity: 0.7;
     
 }
+
 
 .cursos-list-itens:hover{
     opacity: 1;
 }
 
 .cursos-list-itens::before{
-    display: flex;
-    justify-content: baseline;
-    align-items: baseline;
     content: attr(id);
     color: white;
-    background-color: rgba(237, 81, 7, 0.8);
-    width: auto;
-    height: auto;
-    
+    background-color: rgba(237, 81, 7, 0.8);    
     font-family: 'Raleway-Black';
     font-size: 1em;
     letter-spacing: 2px;
@@ -89,16 +124,8 @@
     
    
 }
-/* 
-#TOEFL::before ,
-  #TOEIC::before{
-    transform:rotate(-45deg) translate(5px);
-}
 
-#Java-Intermed::before{
-    transform:rotate(-45deg) translate(-18px);
-}
- */
+
 
 
 .cursos-list-itens-huge{
@@ -107,9 +134,12 @@
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+  
     width: 56%;
     height: 70%;
+    display: flex;
+    align-self: top;
+    justify-content: center;
     background-size: cover;
     list-style: none;
     z-index: 11;
@@ -121,6 +151,7 @@
 
 #Angular-1{
         background-image: url('./imagens/certificados/AngularParteII.png');
+        background-position-x: right;
        
 }
 #c-Sharp{
