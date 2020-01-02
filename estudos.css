@@ -38,7 +38,7 @@
     
 }
 
-#estudos::before{
+.click-to-open{
     content: url('./imagens/figuras/estudos-seta-scroll-behavior.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -52,17 +52,20 @@
 
 
 .cursos-list{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex: 0 0 50%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: auto;
+    justify-content: safe;
+   
+    
+
+   
     
 }
 
-.cursos-list{    
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .cursos-list-itens{
     list-style: none;
@@ -70,40 +73,11 @@
     padding: 0;
     background-size: contain;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;    
-}
-
-
-.cursos-list{
-    padding: 0;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  
-    -webkit-overflow-scrolling: auto;
-       
-}   
-    
-    /* Track */
-    
-.cursos-list::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.3) ;
-    }
-    
-    
-    /* Handle */
-    
-.cursos-list::-webkit-scrollbar-thumb {
-        background: rgba(237, 81, 7, 0.5);
-        opacity: 0.3;
-    }   
-
-.cursos-list-itens{
     width: 30%;
-    height:200px;
+    height: 100px;
     flex: 0 0 auto;
     opacity: 0.7;
+    
     
 }
 
@@ -112,18 +86,15 @@
     opacity: 1;
 }
 
-.cursos-list-itens::before{
+/* .cursos-list-itens::before{
     content: attr(id);
     color: white;
     background-color: rgba(237, 81, 7, 0.8);    
     font-family: 'Raleway-Black';
     font-size: 1em;
     letter-spacing: 2px;
-   
-  
-    
-   
-}
+
+}  */
 
 
 
@@ -139,7 +110,8 @@
     height: 70%;
     display: flex;
     align-self: top;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: center;
     background-size: cover;
     list-style: none;
     z-index: 11;
@@ -147,6 +119,34 @@
  
  
 }
+
+
+
+.cursos-list::-webkit-scrollbar {
+    width: 20px;
+}
+    
+  
+    
+.cursos-list::-webkit-scrollbar-track {
+     /* Track */
+        -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,0.3) ;
+    }
+
+.cursos-list::-webkit-scrollbar-button{
+    width: 10%;
+    
+}    
+    
+    
+  
+    
+.cursos-list::-webkit-scrollbar-thumb {
+      /* Handle */
+        background: rgba(237, 81, 7, 0.5);
+        opacity: 0.3;
+        padding-top: 20px;
+    }   
 
 
 #Angular-1{
