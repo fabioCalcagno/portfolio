@@ -3,7 +3,7 @@
 var descendentes = document.querySelectorAll(".cursos-list-itens");
 for (let i = 0; i < descendentes.length; i++) {
     descendentes[i].addEventListener("click", function (e) {
-      
+        
         this.setAttribute('class', 'cursos-list-itens-huge'); 
        
 })

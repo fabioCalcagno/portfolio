@@ -1,0 +1,111 @@
+
+@media (max-width: 350px ){
+    .section-contato{
+    min-height: 650px;
+    }
+}
+
+.section-contato{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: auto;
+   
+  
+}
+
+
+
+
+.section-contato .container{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin: 0 auto!important;
+}
+.contato-image{
+    background-image: url('./imagens/figuras/contato-trabalho-image.png');
+    background-size: contain;
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+  
+}
+   
+.contato-apresentacao{
+    color: #f2f2f2;
+    flex: 2;
+    font-size: 1em;
+    letter-spacing: 1px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-apresentacao h1{
+    font-size: 2em;
+    text-align: center;
+   
+    
+}
+
+.contato-apresentacao p {
+    text-align: center;
+    letter-spacing: 0;
+    
+}
+
+.contato-apresentacao a{
+   
+}
+
+.contato-links{
+    flex: 1;
+    width: 100%;
+}
+
+.contato-links-list{
+   flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.contato-links-list a{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    text-align:  center;
+}
+
+
+
+
+
+#github{
+    background-image: url('./imagens/figuras/github-tag.png');  
+}
+#whatsapp{
+    background-image: url('./imagens/figuras/whatsapp-tag.png');
+}
+#curriculo{
+    background-size: 80%;
+    background-image: url('./imagens/figuras/baixar-curriculo.png');
+    
+}
+
+.contato-links-list a:hover::after,
+.contato-links-list a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: black;
+    color: #f2f2f2;
+   
+    text-indent: 0;
+    font-size: .75em;
+}

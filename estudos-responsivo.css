@@ -56,10 +56,9 @@
 
 
 .cursos-list-itens-huge{
-    
-   
     width: 100%;
     height: 50%;
+    margin: 0 auto;
     background-size: contain;
     list-style: none;
     z-index: 11;
