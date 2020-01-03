@@ -85,7 +85,10 @@
 
 
 
-
+#linkedin{
+    background-size: 80%;
+    background-image: url('./imagens/figuras/linkedin.png');
+}
 #github{
     background-image: url('./imagens/figuras/github-tag.png');  
 }
