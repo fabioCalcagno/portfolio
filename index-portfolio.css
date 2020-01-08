@@ -397,6 +397,11 @@ font-size: 1em;
     padding-top: 1%;
 }
 
+#descricao-contato + p {
+    color: #ED5107;
+    font-weight: bold;
+}
+
 
 
 
