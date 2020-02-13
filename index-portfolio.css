@@ -61,7 +61,7 @@ body{
     background-repeat: no-repeat;  
     background-attachment: fixed;  
     overflow-x: hidden;
-
+  
     
 }
 
@@ -101,7 +101,8 @@ header{
 .header-nav-links{
     font-size: 2em;
     text-decoration: unset;
-   
+    scroll-behavior: smooth;
+
     color: #C72C41;
 }
 
@@ -136,6 +137,8 @@ header{
     background-size: 100% 1px;
     background-repeat: no-repeat;
     background-position: bottom center;    
+    scroll-behavior: smooth;
+
 }
 
 
@@ -188,6 +191,8 @@ padding: 0 !important;
     background-size: 100% 1px;
     background-repeat: no-repeat;
     background-position: bottom center;
+    scroll-behavior: smooth;
+
 }
 
 .left-menu{
